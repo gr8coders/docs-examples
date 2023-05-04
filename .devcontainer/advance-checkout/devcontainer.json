@@ -5,7 +5,7 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/advanced-integration",
 
 	// Use 'onCreateCommand' to run commands when creating the container.
-	"onCreateCommand": "../.devcontainer/advanced-integration/welcome-message.sh",
+	"onCreateCommand": "bash ./.devcontainer/advanced-integration/welcome-message.sh",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
@@ -29,11 +29,11 @@
 	"secrets": {
 		"CLIENT_ID": {
 			"description": "Sandbox client ID of the application.",
-			"documentationUrl": "https://developer.paypal.com/api/rest/"
+			"documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
 		},
 		"APP_SECRET": {
 			"description": "Sandbox secret of the application.",
-			"documentationUrl": "https://developer.paypal.com/api/rest/"
+			"documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
 		}
 	},
 
