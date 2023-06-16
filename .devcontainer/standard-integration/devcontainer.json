@@ -1,6 +1,6 @@
 // For more details, see https://aka.ms/devcontainer.json.
 {
-	"name": "Advanced Integration",
+	"name": "Standard Integration",
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/advanced-integration",
 
