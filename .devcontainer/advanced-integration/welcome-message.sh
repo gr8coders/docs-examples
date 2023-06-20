@@ -20,4 +20,6 @@ if [ -n "$CLIENT_ID" ] && [ -n "$APP_SECRET" ]; then
     WELCOME_MESSAGE="${ALTERNATE_WELCOME_MESSAGE}"
 fi
 
-sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
+# sudo bash -c "echo \"${WELCOME_MESSAGE}\" > /usr/local/etc/vscode-dev-containers/first-run-notice.txt"
+mkdir -p $HOME/.config/vscode-dev-containers/ && touch $HOME/.config/vscode-dev-containers/first-run-notice.txt
+bash -c "echo \"${WELCOME_MESSAGE}\" > $HOME/.config/vscode-dev-containers/first-run-notice.txt"
